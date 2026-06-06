@@ -16,14 +16,23 @@ h1 {
   text-align: center;
 }
 
-/* ultra-subtle container */
-.card {
-  background: rgba(255, 255, 255, 0.12); /* more transparent */
+/* VERY subtle ONLY for text */
+.card-text {
+  background: rgba(255, 255, 255, 0.10);
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.03); /* barely visible line */
-  box-shadow: 0 1px 2px rgba(0,0,0,0.03); /* almost flat */
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  box-shadow: none;
+}
+
+/* normal container for GeoGebra */
+.card-geo {
+  background: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
 
 iframe {
@@ -41,7 +50,7 @@ iframe {
 
 <h1>GeoGebra Visualization</h1>
 
-<div class="card">
+<div class="card-text">
   <p>
     r is the ratio outflow rate divided by inflow rate. r &gt; 1 means more fluid is flowing out than flowing in.
     C₀ is the initial salt concentration. c is the incoming salt concentration.
@@ -49,7 +58,7 @@ iframe {
   </p>
 </div>
 
-<div class="card">
+<div class="card-geo">
    <iframe scrolling="no" title="wellmixedtank"
    src="https://www.geogebra.org/material/iframe/id/qghgzva6/width/899/height/478/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false"
    style="border:0px;">
