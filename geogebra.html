@@ -16,14 +16,17 @@ h1 {
   text-align: center;
 }
 
+/* very subtle container */
 .card {
-  background: white;
+  background: rgba(255, 255, 255, 0.25);
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
 
+/* iframe stays clean */
 iframe {
   width: 100%;
   height: 500px;
@@ -48,7 +51,10 @@ iframe {
 </div>
 
 <div class="card">
-   <iframe scrolling="no" title="wellmixedtank" src="https://www.geogebra.org/material/iframe/id/qghgzva6/width/899/height/478/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="899px" height="478px" style="border:0px;"> </iframe>
+   <iframe scrolling="no" title="wellmixedtank"
+   src="https://www.geogebra.org/material/iframe/id/qghgzva6/width/899/height/478/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false"
+   style="border:0px;">
+   </iframe>
 </div>
 
 </body>
